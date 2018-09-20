@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cde491e-67e9-41a7-8bda-8fd6f4cc810c" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/my-header/my-header.html" afterDir="false" />
+    <list default="true" id="2cde491e-67e9-41a7-8bda-8fd6f4cc810c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webcomponents-app/webcomponents-app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webcomponents-app/webcomponents-app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my-header/my-header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webcomponents-app/webcomponents-app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main-app/main-app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/webcomponents-app/webcomponents-app_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/webcomponents-app/webcomponents-app_test.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,37 +19,38 @@
     <session id="822551701">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="11" />
+          <entry key="html" value="17" />
           <entry key="js" value="1" />
-          <entry key="json" value="1" />
+          <entry key="json" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="11" />
-          <entry key="JSON" value="1" />
+          <entry key="HTML" value="17" />
+          <entry key="JSON" value="4" />
           <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="481" />
-          <entry key="json" value="13" />
+          <entry key="html" value="1863" />
+          <entry key="json" value="24" />
           <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="481" />
-          <entry key="JSON" value="13" />
+          <entry key="HTML" value="1863" />
+          <entry key="JSON" value="24" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
@@ -59,35 +61,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/my-header/my-header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webcomponents-app/webcomponents-app.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="390">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main-app/main-app.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polymer.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state>
+              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -97,6 +95,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>title</find>
+      <find>input</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,12 +109,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/src/my-header/my-header.html" />
         <option value="$PROJECT_DIR$/src/webcomponents-app/webcomponents-app.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/src/main-app/main-app.html" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="$PROJECT_DIR$/bower.json" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -129,7 +134,9 @@
       <path value="$PROJECT_DIR$/bower_components/async/package.json" />
       <path value="$PROJECT_DIR$/bower_components/chai/package.json" />
       <path value="$PROJECT_DIR$/bower_components/font-roboto/package.json" />
+      <path value="$PROJECT_DIR$/bower_components/iron-a11y-announcer/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-a11y-keys-behavior/package.json" />
+      <path value="$PROJECT_DIR$/bower_components/iron-autogrow-textarea/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-behaviors/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-checked-element-behavior/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-flex-layout/package.json" />
@@ -138,6 +145,7 @@
       <path value="$PROJECT_DIR$/bower_components/iron-icons/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-iconset-svg/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-image/package.json" />
+      <path value="$PROJECT_DIR$/bower_components/iron-input/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-location/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-media-query/package.json" />
       <path value="$PROJECT_DIR$/bower_components/iron-menu-behavior/package.json" />
@@ -148,6 +156,7 @@
       <path value="$PROJECT_DIR$/bower_components/iron-validatable-behavior/package.json" />
       <path value="$PROJECT_DIR$/bower_components/paper-behaviors/package.json" />
       <path value="$PROJECT_DIR$/bower_components/paper-icon-button/package.json" />
+      <path value="$PROJECT_DIR$/bower_components/paper-input/package.json" />
       <path value="$PROJECT_DIR$/bower_components/paper-item/package.json" />
       <path value="$PROJECT_DIR$/bower_components/paper-listbox/package.json" />
       <path value="$PROJECT_DIR$/bower_components/paper-ripple/package.json" />
@@ -162,10 +171,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2394" />
-    <option name="y" value="27" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="1987" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,19 +192,31 @@
             <path>
               <item name="webcomponents" type="b2602c69:ProjectViewProjectNode" />
               <item name="webcomponents" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webcomponents" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webcomponents" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="paper-input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webcomponents" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webcomponents" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="paper-input" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webcomponents" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webcomponents" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webcomponents" type="b2602c69:ProjectViewProjectNode" />
               <item name="webcomponents" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="my-header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webcomponents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webcomponents" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webcomponents-app" type="462c0819:PsiDirectoryNode" />
+              <item name="main-app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webcomponents" type="b2602c69:ProjectViewProjectNode" />
@@ -213,7 +234,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.php.tools.quality.phpcs.PhpCSConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -248,34 +269,52 @@
       <option name="presentableId" value="Default" />
       <updated>1537444514499</updated>
       <workItem from="1537444515546" duration="5508000" />
-      <workItem from="1537451000676" duration="825000" />
+      <workItem from="1537451000676" duration="3833000" />
+      <workItem from="1537454843346" duration="6406000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1537451859676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537451859676</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6333000" />
+    <option name="totallyTimeSpent" value="15747000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18926397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19147758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="10" weight="0.32912844" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31027028" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3091892" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -306,20 +345,6 @@
     <entry file="file://$PROJECT_DIR$/bower_components/app-layout/app-layout.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my-header/my-header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/pv-styles/pv-app-colors.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -327,17 +352,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webcomponents-app/webcomponents-app.html">
+    <entry file="file://$PROJECT_DIR$/src/my-header/my-header.html" />
+    <entry file="file://$PROJECT_DIR$/polymer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/paper-input/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/paper-input/paper-item-behavior.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/paper-input/paper-item.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/paper-input/paper-input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main-app/main-app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
         </state>
       </provider>
     </entry>
