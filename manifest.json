@@ -1,0 +1,7 @@
+{
+  "name": "webcomponents",
+  "short_name": "webcomponents",
+  "description": "webcomponents-template",
+  "start_url": "/",
+  "display": "standalone"
+}

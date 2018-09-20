@@ -1,0 +1,28 @@
+{
+  "name": "app-medication-management",
+  "description": "Application to manage medication",
+  "main": "index.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#2.3.1",
+    "app-layout": "PolymerElements/app-layout# 2.1.1",
+    "app-route": "PolymerElements/app-route#2.0.0",
+    "iron-pages": "PolymerElements/iron-pages#2.0.0",
+    "iron-icon": "PolymerElements/iron-icon#^2.1.0",
+    "iron-icons": "PolymerElements/iron-icons#^2.1.1",
+    "paper-icon-button": "PolymerElements/paper-icon-button#^2.2.0",
+    "paper-styles": "PolymerElements/paper-styles#^2.1.0",
+    "paper-item": "PolymerElements/paper-item#^2",
+    "paper-tabs": "PolymerElements/paper-tabs#^2",
+    "paper-listbox": "PolymerElements/paper-listbox#^2",
+    "pv-styles": "git@devhomes.portavita.nl:pv-styles#integration",
+    "pv-corporate-logo": "git@devhomes.portavita.nl:pv-corporate-logo#integration"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "iron-test-helpers": "PolymerElements/iron-test-helpers#^2.0.0"
+  },
+  "resolutions": {
+    "polymer": "2.0.0"
+  }
+}
