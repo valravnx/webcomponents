@@ -1,0 +1,41 @@
+<link rel="import" href="/bower_components/polymer/polymer-element.html">
+
+<dom-module id='my-header'>
+    <template>
+        <style>
+
+        </style>
+
+        <p>Hello World</p>
+
+    </template>
+
+    <script>
+        class myHeader extends Polymer.Element {
+
+            static get is() {
+                return 'my-header';
+            }
+
+            static get properties() {
+                return {};
+            }
+
+            constructor() {
+                super();
+            }
+
+            ready() {
+                super.ready();
+                Polymer.RenderStatus.afterNextRender(this, function () {
+
+
+                });
+            }
+
+
+        }
+
+        window.customElements.define(myHeader.is, myHeader);
+    </script>
+</dom-module>
