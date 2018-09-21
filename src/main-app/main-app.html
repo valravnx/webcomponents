@@ -6,6 +6,7 @@
 <link rel="import" href="/bower_components/pv-styles/pv-app-colors.html">
 <link rel="import" href="/bower_components/app-layout/demo/sample-content.html">
 <link rel="import" href="/src/pv-search_tool/pv-search_tool.html">
+<link rel="import" href="/bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
 
 <dom-module id="main-app">
     <template>
@@ -14,10 +15,7 @@
                 display: block;
             }
 
-            @keyframes rotate-45 {
-                from{transform: rotate(-45deg)}
-                to{transform: rotate(0deg)}
-            }
+
 
             app-header {
                 background-color: var(--pv-primary-color);
@@ -39,7 +37,7 @@
                 <span>Here some drawer</span>
             </app-drawer>
             <app-header-layout>
-                <app-header slot="header" fixed elevation="1">
+                <app-header slot="header" fixed effects="waterfall">
                     <app-toolbar >
                         <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
                         <h1 main-title>Here some header</h1>

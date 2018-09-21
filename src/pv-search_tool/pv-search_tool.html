@@ -15,11 +15,43 @@
                 display: block;
             }
 
-            .text-item{
-                padding-left: 1.5rem;
+            .text-item {
+                padding: 0.75rem 1rem;
+                text-align: left;
+
             }
-            .button-item{
+
+
+            .button-item {
                 text-align: right;
+                padding: 0.75rem 1rem;
+
+            }
+
+            @keyframes rotate-45 {
+                from {
+                    transform: rotate(-45deg);
+                }
+                to {
+                    transform: rotate(0deg);
+                }
+            }
+
+            @keyframes zoom-2 {
+                from {
+                    transform: scale(0.5);
+                }
+                to {
+                    transform: scale(1);
+                }
+            }
+
+            :host([is-in-search-mode]) paper-icon-button[icon="close"] {
+            animation: rotate-45 0.2s 1 ;
+            }
+
+            paper-icon-button[icon="search"] {
+                animation: zoom-2 0.2s 1 ;
             }
 
             .search-container {
@@ -30,33 +62,25 @@
                 top: 0;
                 width: 100%;
                 align-items: center;
-                /*box-shadow: 2px 2px 10px #888888;*/
-                transition: 0.2s;
-
-            }
-            .button-item, text-item{
-                padding: 0.75rem;
-            }
-
-            .search-container > div {
-
-                align-content: baseline;
-
             }
 
             #searchText {
-                width: 70vw;
+                width: 80vw;
                 border: none;
                 outline: none;
                 font-weight: 400;
                 font-size: 1.5rem;
-
             }
 
             paper-icon-button[icon="close"],
             iron-input,
+            .search-container,
             :host([is-in-search-mode]) paper-icon-button[icon="search"] {
                 display: none;
+            }
+
+            :host([is-in-search-mode]) .search-container {
+                display: inline-grid;
             }
 
             :host([is-in-search-mode]) paper-icon-button[icon="close"],
@@ -64,7 +88,7 @@
                 display: inline-block;
             }
 
-            paper-icon-button[icon="close"], paper-icon-button[icon="arrow-back"]  {
+            paper-icon-button[icon="close"], paper-icon-button[icon="arrow-back"] {
                 color: gray;
             }
 
@@ -73,29 +97,44 @@
 
             }
 
+
+            @media(max-width: 750px){
+                #searchText {
+                    width: 60vw;
+                }
+            }
+
+
+            @media(max-width: 480px){
+                #searchText {
+                    width: 55vw;
+                }
+            }
+
+            @media(max-width: 340px){
+                #searchText {
+                    width: 35vw;
+                }
+            }
+
         </style>
 
+        <paper-icon-button icon="search" on-click="_handleSearchButtonClicked"></paper-icon-button>
 
         <div class="search-container">
 
-
             <div class="text-item">
-                <iron-input>
-                    <paper-icon-button icon="arrow-back" on-click="_handleBackButtonClicked"></paper-icon-button>
-                    <input id="searchText" placeholder="Search">
+                <paper-icon-button icon="arrow-back" on-click="_handleBackButtonClicked"></paper-icon-button>
+                <iron-input on-keydown="_handleEnterButton" bind-value="{{bindValue}}">
+                    <input value="{{searchText::input}}" id="searchText" placeholder="Search">
                 </iron-input>
             </div>
 
             <div class="button-item">
-
-                <paper-icon-button icon="search" on-click="_handleSearchButtonClicked"></paper-icon-button>
                 <paper-icon-button icon="close" on-click="_handleCloseButtonClicked"></paper-icon-button>
             </div>
 
-
         </div>
-
-
     </template>
 
     <script>
@@ -112,7 +151,7 @@
                         type: Boolean,
                         reflectToAttribute: true
                     },
-                    textSearchChange: {
+                    searchText: {
                         type: String
                     }
                 };
@@ -134,6 +173,7 @@
                 this.set("isInSearchMode", false);
                 console.log("isSearchMode false");
                 this.$.searchText.value = "";
+                this.searchText="";
 
             }
 
@@ -146,6 +186,11 @@
             _writeHelloWorld() {
                 this.$.hello.textContent = "Hello";
                 console.log("changed text");
+            }
+            _handleEnterButton(e){
+                if(e.key==='Enter'){
+                    alert("Your pressed enter! and you are looking for: "+this.searchText+" you would be redirected");
+                }
             }
 
 
