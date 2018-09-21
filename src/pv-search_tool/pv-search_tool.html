@@ -1,0 +1,156 @@
+<link rel="import" href="/bower_components/polymer/polymer-element.html">
+<link rel="import" href="/bower_components/iron-input/iron-input.html">
+<link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="/bower_components/paper-styles/paper-styles.html">
+<link rel="import" href="/bower_components/pv-styles/pv-app-colors.html">
+<link rel="import" href="/bower_components/app-layout/app-layout.html">
+
+<dom-module id='pv-search_tool'>
+    <template>
+        <style>
+
+
+            :host {
+                display: block;
+            }
+
+            .text-item{
+                padding-left: 1.5rem;
+            }
+            .button-item{
+                text-align: right;
+            }
+
+            .search-container {
+                position: absolute;
+                display: inline-grid;
+                grid-template-columns: 11fr 1fr;
+                right: 0;
+                top: 0;
+                width: 100%;
+                align-items: center;
+                /*box-shadow: 2px 2px 10px #888888;*/
+                transition: 0.2s;
+
+            }
+            .button-item, text-item{
+                padding: 0.75rem;
+            }
+
+            .search-container > div {
+
+                align-content: baseline;
+
+            }
+
+            #searchText {
+                width: 70vw;
+                border: none;
+                outline: none;
+                font-weight: 400;
+                font-size: 1.5rem;
+
+            }
+
+            paper-icon-button[icon="close"],
+            iron-input,
+            :host([is-in-search-mode]) paper-icon-button[icon="search"] {
+                display: none;
+            }
+
+            :host([is-in-search-mode]) paper-icon-button[icon="close"],
+            :host([is-in-search-mode]) iron-input {
+                display: inline-block;
+            }
+
+            paper-icon-button[icon="close"], paper-icon-button[icon="arrow-back"]  {
+                color: gray;
+            }
+
+            :host([is-in-search-mode]) .search-container {
+                background-color: white;
+
+            }
+
+        </style>
+
+
+        <div class="search-container">
+
+
+            <div class="text-item">
+                <iron-input>
+                    <paper-icon-button icon="arrow-back" on-click="_handleBackButtonClicked"></paper-icon-button>
+                    <input id="searchText" placeholder="Search">
+                </iron-input>
+            </div>
+
+            <div class="button-item">
+
+                <paper-icon-button icon="search" on-click="_handleSearchButtonClicked"></paper-icon-button>
+                <paper-icon-button icon="close" on-click="_handleCloseButtonClicked"></paper-icon-button>
+            </div>
+
+
+        </div>
+
+
+    </template>
+
+    <script>
+        class pvSearch_tool extends Polymer.Element {
+
+            static get is() {
+                return 'pv-search_tool';
+            }
+
+            static get properties() {
+                return {
+
+                    isInSearchMode: {
+                        type: Boolean,
+                        reflectToAttribute: true
+                    },
+                    textSearchChange: {
+                        type: String
+                    }
+                };
+            }
+
+            constructor() {
+                super();
+            }
+
+
+            _handleSearchButtonClicked() {
+                this.set("isInSearchMode", true);
+                console.log("isSearchMode true");
+                this.$.searchText.focus();
+
+            }
+
+            _handleCloseButtonClicked() {
+                this.set("isInSearchMode", false);
+                console.log("isSearchMode false");
+                this.$.searchText.value = "";
+
+            }
+
+            _handleBackButtonClicked() {
+                this.set("isInSearchMode", false);
+                console.log("isSearchMode false");
+
+            }
+
+            _writeHelloWorld() {
+                this.$.hello.textContent = "Hello";
+                console.log("changed text");
+            }
+
+
+        }
+
+        window.customElements.define(pvSearch_tool.is, pvSearch_tool);
+    </script>
+</dom-module>

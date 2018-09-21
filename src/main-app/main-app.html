@@ -4,7 +4,8 @@
 <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="/bower_components/paper-styles/paper-styles.html">
 <link rel="import" href="/bower_components/pv-styles/pv-app-colors.html">
-<link rel="import" href="/bower_components/paper-input/paper-input.html">
+<link rel="import" href="/bower_components/app-layout/demo/sample-content.html">
+<link rel="import" href="/src/pv-search_tool/pv-search_tool.html">
 
 <dom-module id="main-app">
     <template>
@@ -13,44 +14,19 @@
                 display: block;
             }
 
-            app-toolbar {
+            @keyframes rotate-45 {
+                from{transform: rotate(-45deg)}
+                to{transform: rotate(0deg)}
+            }
+
+            app-header {
                 background-color: var(--pv-primary-color);
                 color: var(--pv-apptoolbar-text-color);
-                --app-toolbar-font-size: 12px;
-                transition: 0.5s;
             }
+
 
             h1 {
                 @apply --paper-font-title;
-            }
-
-            .search-text {
-                opacity: 0;
-                width: 0;
-                font-family: 'Roboto', 'Noto', sans-serif;
-                transition: 0.5s;
-                font-size: 1.5rem;
-            }
-
-            :host([is-in-search-mode]) app-toolbar {
-                background-color: white;
-                transition: 0.5s;
-            }
-
-            :host([is-in-search-mode]) paper-icon-button[icon="search"], :host([is-in-search-mode]) paper-icon-button[icon="close"] {
-                color: #717171;
-            }
-
-            :host([is-in-search-mode]) h1[main-title], :host([is-in-search-mode]) paper-icon-button[icon="menu"] {
-                display: none;
-                transition: 0.5s;
-            }
-
-            :host([is-in-search-mode]) .search-text {
-                opacity: 1;
-                width: 95vw;
-                transition: 0.5s;
-                padding: 0 2vw 0 2vw;
             }
 
 
@@ -63,19 +39,21 @@
                 <span>Here some drawer</span>
             </app-drawer>
             <app-header-layout>
-                <app-header class="main-header" slot="header">
-                    <app-toolbar>
+                <app-header slot="header" fixed elevation="1">
+                    <app-toolbar >
                         <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
                         <h1 main-title>Here some header</h1>
-                        <paper-icon-button icon="search" on-click="_handleSearchButtonClicked"></paper-icon-button>
-                        <paper-input  label="Search..." id="searchText" class="search-text"  value-changed="_writeHelloWorld"> </paper-input>
-                        <paper-icon-button icon="close" on-click="_handleCloseButtonClicked"></paper-icon-button>
+                        <pv-search_tool></pv-search_tool>
+
                     </app-toolbar>
                 </app-header>
             </app-header-layout>
+
+
+            <sample-content size='100'></sample-content>
+
         </app-drawer-layout>
 
-        <p id="hello"></p>
 
     </template>
 
@@ -93,13 +71,7 @@
 
             static get properties() {
                 return {
-                    isInSearchMode: {
-                        type: Boolean,
-                        reflectToAttribute: true
-                    },
-                    textSearchChange:{
-                        type:String
-                    }
+
 
                 };
             }
@@ -113,23 +85,8 @@
 
             }
 
-            _handleSearchButtonClicked() {
-                this.set("isInSearchMode", true);
-                console.log("isSearchMode true");
-                this.$.searchText.focus();
 
-            }
 
-            _handleCloseButtonClicked() {
-                this.set("isInSearchMode", false);
-                console.log("isSearchMode false");
-
-            }
-
-            _writeHelloWorld(){
-              this.$.hello.textContent="Hello";
-                console.log("changed text");
-            }
 
         }
 
